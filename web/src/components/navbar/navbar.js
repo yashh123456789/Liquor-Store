@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import {BrowserRouter as Router} from "react-router-dom";
 import "../navbar/navbar.css";
+import logo from '../navbar/icon.jpeg';
 
 
 export const NavBar = () => {
@@ -30,8 +31,11 @@ export const NavBar = () => {
       <Router>
         <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
           <Container>
+          
             <Navbar.Brand href="home">
-              <h2 style={{color:"white", fontWeight:"bolder"}}>ගල්ස්</h2>
+            <div className="navbar-logo">
+                 <img src={logo} alt="Logo"/>
+            </div>
             </Navbar.Brand>
             
              

@@ -35,3 +35,8 @@ nav.navbar {
     margin-top: 2%;
     font-size: 35;
   }
+
+  .navbar-logo{
+    width: 500%;
+    height: 5%;
+  }
