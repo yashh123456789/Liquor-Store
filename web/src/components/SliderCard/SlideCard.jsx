@@ -1,22 +1,22 @@
-import { Col, Container, Row } from "react-bootstrap";
 import "./slidercard.css";
 
-const SlideCard = ({title,desc,cover}) => {
+const SlideCard = ({ title, desc, cover }) => {
   return (
-      <Container className='box' >
-        <Row>
-          <Col md={6}>
-            <h1>{title}</h1>
+    <div className="slide-item">
+      <div 
+        className="slide-bg-image" 
+        style={{ backgroundImage: `url(${cover})` }}
+      >
+        <div className="slide-overlay">
+          <div className="slide-text">
+            <h2>{title}</h2>
             <p>{desc}</p>
-            <button className='btn-primary'>Visit Collections</button>
-          </Col>
-          <Col md={6}>
-            <img src={cover} alt="#" />
-          </Col>
-        </Row>
+            <a href='shop' className="shop-now-btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-    </Container>
-  )
-}
-
-export default SlideCard
+export default SlideCard;

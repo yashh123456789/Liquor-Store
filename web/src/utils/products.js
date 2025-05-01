@@ -14,9 +14,9 @@ import productImg13 from "../Images/Vodka1.png";
 import productImg14 from "../Images/Vodka2.png";
 
 
-import arrackSlide from "../Images/Arrack03.png";
-import ginSlide from "../Images/Gin1.png";
-import whiskySlide from "../Images/Whisky3.png";
+import arrackSlide from "../Images/slider01.jpg";
+import ginSlide from "../Images/slider02.jpeg";
+import whiskySlide from "../Images/slider03.jpg";
 
 export const SliderData = [
   {
