@@ -86,10 +86,11 @@ export const discoutProducts = [
     imgUrl: productImg02,
     category: "Arrack",
     price: 2530,
+    discount:30,
     shortDesc:
       " ",
     description:
-      " ",
+      " A refined evolution of its predecessor, Colombo No. 8 London Dry Gin offers a smoother, lighter twist while maintaining the exotic heart of Sri Lankan botanicals. Distilled with a precise selection of 8 botanicals, including juniper, coriander, angelica, and a signature blend of curry leaves, ginger, and cinnamon, this gin delivers an aromatic profile that’s both refreshing and complex.",
     reviews: [
       {
         rating: 4.8,
@@ -109,14 +110,14 @@ export const discoutProducts = [
 export const products = [
   {
     id: "01",
-    productName: "Black label ",
+    productName: "Black label",
     imgUrl: productImg01,
     category: "Arrack",
-    price: 1930,
+    price: '1,930.00',
     shortDesc:
-      "",
+      "An interesting twist on Johnnie Walker Black Label, Double Black was rolled out for general release in 2011 after a successful launch in travel retail. Double Black adds to the normal Black Label profile by including more Islay whisky and casks that have been heavily charred, giving a more intense flavour with a greater emphasis on smoke while keeping true to the sophisticated Johnnie Walker style",
     description:
-      " ",
+    " A refined evolution of its predecessor, Colombo No. 8 London Dry Gin offers a smoother, lighter twist while maintaining the exotic heart of Sri Lankan botanicals. Distilled with a precise selection of 8 botanicals, including juniper, coriander, angelica, and a signature blend of curry leaves, ginger, and cinnamon, this gin delivers an aromatic profile that’s both refreshing and complex.",
     reviews: [
       {
         rating: 4.7,

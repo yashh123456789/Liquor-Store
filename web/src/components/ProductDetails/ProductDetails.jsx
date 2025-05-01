@@ -22,40 +22,45 @@ const ProductDetails = ({ selectedProduct }) => {
       <Container>
         <Row className="justify-content-center">
           <Col md={6}>
-            <img loading="lazy" src={selectedProduct?.imgUrl} alt="" />
+            <div className="image-zoom-container">
+              <img
+                loading="lazy"
+                src={selectedProduct?.imgUrl}
+                alt={selectedProduct?.productName}
+              />
+            </div>
           </Col>
           <Col md={6}>
-            <h2>{selectedProduct?.productName}</h2>
-            <div className="rate">
-              <div className="stars">
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-                <i className="fa fa-star"></i>
-              </div>
-              <span>{selectedProduct?.avgRating} ratings</span>
-            </div>
+            <h2 style={{
+              fontFamily: "Poppins, sans-serif",
+              fontWeight: 600,
+              fontSize: "24px",
+              color: "#333"
+            }}>
+              {selectedProduct?.productName}
+            </h2>
             <div className="info">
-              <span className="price">${selectedProduct?.price}</span>
-              <span>category:{selectedProduct?.category}</span>
+              <span className="price">LKR {selectedProduct?.price}</span>
             </div>
             <p>{selectedProduct?.shortDesc}</p>
-            <input
-              className="qty-input"
-              type="number"
-              placeholder="Qty"
-              value={quantity}
-              onChange={handleQuantityChange}
-            />
-            <button
-              aria-label="Add"
-              type="submit"
-              className="add"
-              onClick={() => handelAdd(selectedProduct, quantity)}
-            >
-              Add To Cart
-            </button>
+            <div className="add-to-cart-row">
+              <input
+                className="qty-input"
+                type="number"
+                placeholder="Qty"
+                value={quantity}
+                onChange={handleQuantityChange}
+                min="1"  // Ensures quantity can't be below 1
+              />
+              <button
+                aria-label="Add"
+                type="submit"
+                className="add"
+                onClick={() => handelAdd(selectedProduct, quantity)}
+              >
+                Add To Cart
+              </button>
+            </div>
           </Col>
         </Row>
       </Container>

@@ -1,26 +1,21 @@
 .product-page img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 70%;
+  height: 70%;
+  /* Add margin/padding to create space for zoom */
+  padding: 15px; /* Adjust based on your layout */
+  box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.product-page img:hover {
+  transform: scale(1.1); /* Adjust scale value as needed */
+  /* Optional: Add a subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 767px) {
   .product-page .row {
     gap: 30px;
   }
-}
-
-.product-page .rate {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-  gap: 40px;
-}
-
-.product-page .rate .stars i {
-  font-size: 12px;
-  color: #ffcd4e;
-  margin: 5px 5px 5px 0;
 }
 
 .product-page .info {
@@ -30,7 +25,7 @@
 }
 
 .product-page .info .price {
-  font-size: 25px;
+  font-size: 15px;
   font-weight: 500;
 }
 
@@ -40,20 +35,41 @@
 }
 
 .product-page .qty-input {
-  width: 80px;
-  height: 20px;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 15px;
-  margin: 20px 0;
-  color: black;
-  font-size: 15px;
+  width: 50px;         /* Fixed width for the input */
+  padding: 3px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
 }
 
 .product-page button.add {
-  padding: 10px 15px;
-  background-color: #0f3460;
+  padding: 6px 12px;     
+  background-color: #000000;
   color: white;
-  font-size: 17px;
-  border-radius: 7px;
+  font-size: 14px;      
+  border-radius: 2px;  
+}
+.add-to-cart-row {
+  display: flex;       /* Puts input and button in a row */
+  gap: 10px;           /* Adds space between elements */
+  align-items: center; /* Vertically centers items */
+  margin-top: 15px;    /* Adds spacing from elements above */
+}
+.product-page.image-zoom-container {
+  width: 70%;
+  height: 70%;
+  padding: 15px; /* Acts as margin */
+  overflow: hidden; /* Clips zoomed image edges */
+}
+
+.product-page.image-zoom-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.product-page.image-zoom-container img:hover {
+  transform: scale(1.1);
 }
