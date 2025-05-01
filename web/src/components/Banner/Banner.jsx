@@ -1,18 +1,11 @@
-import { Col, Container, Row } from "react-bootstrap";
 import productBg from "../../Images/table.jpg";
 import "./banner.css";
-const Banner = ({title}) => {
+
+const Banner = () => {  // Destructure selectedProduct prop
     return ( 
         <div className="image-container">
             <img src={productBg} alt="Product-bg" />
             <div className="overlay">
-                <Container>
-                    <Row>
-                        <Col>
-                            <h2>{title}</h2>
-                        </Col>
-                    </Row>
-                </Container>
             </div>
         </div>
     );
