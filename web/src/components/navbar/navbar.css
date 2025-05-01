@@ -99,7 +99,8 @@
 .nav-link-label {
   color: black;
   font-size: 18px !important;
-  font-weight: 600;
+  font-weight: 550;
+  font-family: 'Poppins', sans-serif; /* Add this line */
 }
 
 .nav-icon {

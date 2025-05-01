@@ -32,7 +32,7 @@ const NavBar = () => {
     >
       <Container className="navbar-container">
         <Navbar.Brand to="/">
-          <img src={weblogo} alt=""/>
+          <a href='/'><img src={weblogo} alt="" /></a>
         </Navbar.Brand>
         {/* Media cart and toggle */}
         <div className="d-flex">
