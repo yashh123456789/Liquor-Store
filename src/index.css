@@ -245,3 +245,201 @@ button.delete ion-icon {
     margin: 10px auto;
   }
 }
+
+/* About Us Page Styles */
+.about-us-page {
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.hero-content .lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #d4af37; /* Gold color */
+}
+
+/* Divider */
+.divider {
+  border-top: 1px solid #eee;
+  position: relative;
+}
+
+.divider::before {
+  content: '🍸';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+/* Philosophy Cards */
+.philosophy-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 3px solid #d4af37;
+}
+
+.philosophy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: #f8f5f0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4af37;
+  font-size: 1.5rem;
+}
+
+/* Store Features */
+.store-features {
+  list-style: none;
+  padding: 0;
+}
+
+.store-features li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.store-features li i {
+  color: #d4af37;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.testimonial-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.rating {
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+.customer {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.customer strong {
+  display: block;
+  font-weight: 600;
+}
+
+.customer span {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #222;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border: 2px solid #222;
+  color: #222;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #222;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 300px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content .lead {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    height: 250px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
