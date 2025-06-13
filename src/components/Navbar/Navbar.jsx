@@ -68,15 +68,11 @@ const NavBar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission here
     if (isSignUp) {
-      // Sign up logic
       console.log('Sign up submitted', formData);
     } else {
-      // Sign in logic
       console.log('Sign in submitted', formData);
     }
-    // Close the overlay after submission
     toggleSignInOverlay();
   };
 
@@ -166,15 +162,26 @@ const NavBar = () => {
 
               <Nav.Item>
                 <Link
-                  aria-label="Go to Cart Page"
+                  aria-label="Go to About Page"
                   className="navbar-link"
-                  to="/cart"
+                  to="/aboutus"
                   onClick={() => setExpand(false)}
                 >
-                  <span className="nav-link-label">Cart</span>
+                  <span className="nav-link-label">About Us</span>
                 </Link>
               </Nav.Item>
 
+              <Nav.Item>
+                <Link
+                  aria-label="Go to Contact Page"
+                  className="navbar-link"
+                  to="/contactus"
+                  onClick={() => setExpand(false)}
+                >
+                  <span className="nav-link-label">Contact Us</span>
+                </Link>
+              </Nav.Item>
+              
               <Nav.Item className="expanded-cart">
                 <button
                   aria-label="Open Sign In Popup"
