@@ -3,6 +3,8 @@ import "./style.css"
 import { Col, Container, Row } from "react-bootstrap"
 import ftlogo from './2.png'
 import { Link } from "react-router-dom";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -42,9 +44,28 @@ const Footer = () => {
           <Col md={3} sm={5} className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>NO.17, Clombo 07, Sri lanka </li>
-              <li>Email: galbothal@gmail.com</li>
-              <li>Phone: +9 4723 456 780</li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=NO.17,+Clombo+07,+Sri+lanka"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaMapMarkerAlt style={{ marginRight: "8px" }} />
+                  NO.17, Clombo 07, Sri lanka
+                </a>
+              </li>
+              <li>
+                <a href="mailto:galbothal@gmail.com">
+                  <FaEnvelope style={{ marginRight: "8px" }} />
+                  galbothal@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+94726756766">
+                  <FaPhone style={{ marginRight: "8px" }} />
+                  +94 726756766
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>
